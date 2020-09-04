@@ -1,0 +1,176 @@
+
+*{
+    font-family: Arial, Helvetica, sans-serif;  
+}
+h1, h2, h3, h4, h5, #smallTitle{
+    font-family: 'Mashtakan';
+}
+
+.signedOutContainer{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0;
+    margin-top: 200px;
+    transition: 1.4s;
+}
+.signedOutContainerShowing{
+    width: 100%;
+    height: 100%;
+    background-color: #fFFF;
+    opacity: 1;
+    margin-top: 0px;
+    transition: 1.4s;
+}
+
+.signedOutContainer h2{
+    margin: 0px;
+    padding: 0px;
+}
+
+#welcome-text{
+    font-size: 2.5em;
+    padding: 20px;
+    margin-top: 120px;
+}
+
+#welcome-small-text{
+    padding: 20px;
+    margin-top: -10px;
+    font-weight: 500;
+}
+
+.registrationPanel{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    background-color: #fff;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding-bottom: 20px;
+    border-top: 0px #000 solid;
+    box-shadow: 0px -2px 10px 0px rgba(0,0,0,.1245);
+    z-index: 2;
+
+}
+
+#smallTitle{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#cellphone, #cellphone1{
+    width: 80%;
+    height: 35px;
+    border-radius: 2px;
+    border: 0px;
+    padding: 7px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #333;
+    margin-top: -10px;
+    text-align: center;
+    margin-bottom: 35px;
+    background-color: #f2f2f2;
+}
+
+#submitLogin{
+    width: 50%;
+    height: 45px;
+    border-radius: 2px;
+    border: 0px;
+    padding: 7px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+    margin-top: -10px;
+    text-align: center;
+    background-color: #000;
+}
+
+#negative{
+    height: 45px;
+    border-radius: 2px;
+    border: 0px #4d4d4d solid;
+    padding: 7px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #333;
+    margin-top: -10px;
+    text-align: left;
+    background-color: #fff;
+    text-decoration: underline;
+    padding: 0px;
+}
+
+::placeholder{
+    color: #4d4d4d;
+}
+
+input:focus, input:hover, input:active{
+    outline: none;
+    border: 1px #000 solid;
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+button:focus, button:hover, button:active{
+    outline: none;
+    background-color: #fFFF;
+    border: 1px #333 solid;
+    opacity: .8;
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.confirmPIN{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0px;
+    left: 110%;
+    transition: .7s;
+    opacity: 0;
+}
+
+.confirmPINShowing{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0px;
+    left: 0%;
+    transition: .7s;
+    z-index: 3;
+    opacity: 1;
+}
+
+.errorBox{
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,.1245);
+    position: fixed;
+    top: -55px;
+    transition: .2s;
+    z-index: 4;
+    opacity: 0;
+}
+.errorShowing{
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,.1245);
+    position: fixed;
+    top: 0px;
+    transition: .2s;
+    z-index: 4;
+    opacity: .8;
+}
+.errorText{
+    margin: 0px;
+    padding: 0px;
+    font-weight: 500;
+    color: #333;
+}
